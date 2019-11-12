@@ -1,0 +1,30 @@
+pipeline{
+    agent any
+    stages{
+    stage("get scm"){
+        steps{
+      echo "get the source code"
+}
+}
+    stage("build "){
+        steps{
+      echo "build the source code"
+}
+}
+    stage("artifacts"){
+        steps{
+      echo "create artifacts"
+}
+}
+    stage("push nexus"){
+        steps{
+      echo "push artifacts to nexus"
+}
+}
+    stage("deply"){
+        steps{
+      echo "deploy to tomcat"
+}
+}
+}
+}
