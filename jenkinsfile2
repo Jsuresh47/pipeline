@@ -3,6 +3,6 @@ node{
         git 'https://github.com/Jsuresh47/newrepo1.git'
 }
     stage('build'){
-        sh label: '', script: 'mvn clean package'
+        sh label: '', script: 'mvn clean package install'
 }
 }
